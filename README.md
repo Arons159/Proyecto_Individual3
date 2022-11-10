@@ -50,13 +50,15 @@ Luego procedemos a conectar nuestro DataBase con PowerBI; en el cual podemos cre
 - Dia - Contiene solo el dia del accidente
 - Decada - Se calcula la decada correspondiente al año
 - Dia_de_semana - Contiene el Dia de la semana de la ocurrencia
+
 Variables y Metricas adicionales que se calcularon con DAX para realizar el reporte en PowerBI
+
 - Cayo_mar - VAriable obtenida de fallecidos_suelo, para saber que accidentes terminaron en el mar; valores SI y NO.
 - Mar - Se convirtio la columna Cayo_mar a 0 y 1 para poder calcular ratios.
 - Ratio accidentes en Mar - Se obtiene de la division de Numero de accidentes en Mar sobre Numero de accidentes total
 - Numero de Accidentes en Mar - Se obtiene de la funcion SUM sobre la columna Mar
 - Numero de accidentes - Se obtiene de la funcion COUNT sobre la columna Unamed(INDEX)
 - Cantidad de Accidentes - Se obtiene de la funcion COUNT sobre la columna Ruta
-- AVG Tripulante fallecidos - Se obtiene de la funcion suma de lla columna tripulantes_fallecidos sobre el numero de accidentes
+- AVG Tripulante fallecidos - Se obtiene de la funcion suma de la columna tripulantes_fallecidos sobre el numero de accidentes
 -  AVG total fallecidos - Se calcula de la Suma de Total de Fallecidos entre el numero de accidentes 
 - AVG Pasajero Comun Fallecido - Se calcula de las suma de pasajerosC_fallecidos sobre el numero de accidentes 
